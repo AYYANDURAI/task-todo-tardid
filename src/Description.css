@@ -1,0 +1,17 @@
+.description__details {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: lightgrey;
+    border-radius: 20px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+@media screen and (max-width:600px) {
+    .description__details {
+        max-width: 300px;
+        justify-content: center;
+        margin-left: 50px;
+    }
+}

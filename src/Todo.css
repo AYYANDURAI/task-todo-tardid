@@ -1,0 +1,31 @@
+.todo__card {
+    width: 440px;
+    height: 650px;
+}
+
+.todo__card {
+    overflow-y: scroll !important;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    height: 150px;
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 15px rgba(0, 0, 0, 1);
+}
+
+@media screen and (max-width:600px) {
+    .todo__card {
+        width: 350px;
+        height: 500px;
+        margin-left: 13px;
+    }
+}

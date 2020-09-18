@@ -1,0 +1,103 @@
+.todo {
+    width: 380px;
+    margin-top: 20px;
+}
+
+.todo__content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #d2fab9;
+}
+
+.remove {
+    color: rgb(240, 102, 102) !important;
+    padding: 2px;
+    font-size: 30px !important;
+}
+
+.remove:hover {
+    color: red !important;
+    cursor: pointer;
+    transform: translateY(5%);
+    transition: all .2s;
+}
+
+.cardcontent-done {
+    max-width: 250px !important;
+    text-decoration: line-through;
+}
+
+.cardcontent {
+    max-width: 250px !important;
+}
+
+.types {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.progress {
+    font-size: 30px !important;
+    color: steelblue;
+    cursor: pointer;
+    padding: 2px;
+}
+
+.done {
+    color: green;
+    font-size: 30px !important;
+    cursor: pointer;
+    padding: 2px;
+}
+
+.progress:hover {
+    cursor: pointer;
+    color: blue;
+    transform: translateY(5%);
+    transition: all .2s;
+}
+
+
+.done:hover {
+    cursor: pointer;
+    color: rgb(33, 51, 6);
+    transform: translateY(5%) scale(1.1);
+    transition: all .2s;
+}
+
+.todo__content-done {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f7a5a2;
+}
+
+.rotate {
+    animation: rotate .5s infinite linear;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width:600px) {
+    .todo {
+        width: 280px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .todo {
+        width: 220px;
+    }
+}
