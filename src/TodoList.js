@@ -20,7 +20,7 @@ class TodoList extends Component {
             <div className="todo-list" >
                 {
                     this.props.todos.map((todo, index) => (
-                        index <= 10 && (<Card className="todo" key={todo.id}>
+                        <Card className="todo" key={todo.id}>
                             <CardContent
                                 className={todo.completed ? 'todo__content-done' : 'todo__content'}>
                                 <Typography className={todo.completed ? 'cardcontent-done' : 'cardcontent'} color="textPrimary" gutterBottom>
@@ -34,7 +34,7 @@ class TodoList extends Component {
                                     <DoneSharpIcon className="done" onClick={() => { this.props.makeDone(todo) }} />
                                 </div>
                             </CardContent>
-                        </Card>)
+                        </Card>
                     ))
                 }
             </div>
